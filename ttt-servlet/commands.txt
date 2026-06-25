@@ -1,0 +1,21 @@
+Copy the war file into Tomcat's webapps folder:
+
+copy target\ttt-servlet.war C:\Tomcat\apache-tomcat-10.1.56-windows-x64\apache-tomcat-10.1.56\webapps
+
+Tomcat server is a background process you start from terminal:
+bat:
+
+C:\Tomcat\apache-tomcat-10.1.56-windows-x64\apache-tomcat-10.1.56\bin\startup.bat
+
+A new terminal window pops up showing Tomcat logs. When you see a line like: 
+INFO: Server startup in [X] milliseconds
+...it's ready. 
+
+To stop it later:
+
+C:\Tomcat\apache-tomcat-10.1.56-windows-x64\apache-tomcat-10.1.56\bin\shutdown.bat
+
+To play: access
+http://localhost:8080/ttt-servlet/BrowserClient.html
+
+in your browser

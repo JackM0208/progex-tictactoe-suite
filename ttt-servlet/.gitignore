@@ -1,0 +1,13 @@
+# Thư mục compile của Maven
+**/target/
+
+# File cấu hình của VS Code
+.vscode/
+
+# File hệ thống và rác
+*.class
+.DS_Store
+Thumbs.db
+
+# File log
+*.log

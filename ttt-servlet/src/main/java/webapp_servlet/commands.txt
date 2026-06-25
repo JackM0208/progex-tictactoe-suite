@@ -1,0 +1,5 @@
+# testing the server with cmd 
+curl -X POST -H "Content-Type: application/json" -d "{\"id\":1, \"boardState\":\"000 000 000\", \"move\":5}" http://localhost:5678/play
+
+# run the server
+mvn exec:java "-Dexec.mainClass=vgu.pe2026.ttt.webapp.Server_side.Server"
