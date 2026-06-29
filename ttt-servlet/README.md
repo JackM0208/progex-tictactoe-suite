@@ -81,7 +81,7 @@ set CATALINA_HOME=C:\Tomcat\apache-tomcat-10.1.56
 Copy the built `.war` file into Tomcat's `webapps/` folder:
 
 ```bat
-copy target\ttt-servlet.war %CATALINA_HOME%\webapps\
+copy target\ttt-servlet.war C:\Tomcat\apache-tomcat-10.1.56-windows-x64\apache-tomcat-10.1.56\webapps     
 ```
 
 ---
@@ -89,7 +89,7 @@ copy target\ttt-servlet.war %CATALINA_HOME%\webapps\
 ## Step 4 — Start Tomcat
 
 ```bat
-%CATALINA_HOME%\bin\startup.bat
+"C:\Tomcat\apache-tomcat-10.1.56-windows-x64\apache-tomcat-10.1.56\bin\startup.bat"
 ```
 
 A new terminal window will open showing Tomcat logs. Wait until you see:
@@ -119,7 +119,7 @@ Click any cell to make your move. The bot responds automatically.
 When you're done:
 
 ```bat
-%CATALINA_HOME%\bin\shutdown.bat
+"C:\Tomcat\apache-tomcat-10.1.56-windows-x64\apache-tomcat-10.1.56\bin\shutdown.bat"
 ```
 
 ---
